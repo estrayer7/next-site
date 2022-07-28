@@ -7,7 +7,7 @@ export const allFish = () => {
 
 export const fishDetails = (fishId) => {
   const query = `*[_type == 'fish' && _id == '${fishId}']{
-    bait, location, date
+    _id, bait, location, date, "imageUrl": image.asset->url
   }`
   return query
 }

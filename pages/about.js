@@ -26,8 +26,7 @@ const about = () => {
           Software Engineering with a general science minor. When it comes to development, web and 
           mobile development are what excite me the most. Also, I am interning at Compassion International 
           as a software engineer for the summer of 2022. In my free time I enjoy teaching myself the guitar 
-          or going fishing with my friends. You can find my github <a href='https://github.com/estrayer7' target='_blank' rel="noreferrer">here, </a>
-          where I have some projects I have worked on.
+          or going fishing with my friends.
         </p>
       </section>
     </div>

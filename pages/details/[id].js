@@ -3,7 +3,6 @@ import Image from 'next/image'
 import { useRouter } from 'next/router'
 import axios from 'axios'
 import { BASE_URL } from '../../utils/constants'
-import { IoArrowBack } from 'react-icons/io'
 import { BsFillArrowLeftCircleFill } from 'react-icons/bs';
 
 const Detail = ({fish}) => {
@@ -15,7 +14,7 @@ const Detail = ({fish}) => {
       </button>
       <div className='flex justify-center'>
         <div>
-          <div className='relative w-[400px] h-[500px]'>
+          <div className='relative w-[400px] h-[500px] mb-3'>
             <Image src={fish.imageUrl} alt='pic' layout='fill' objectFit='cover' className='rounded-md'/>
           </div>
           <p>Bait used: {fish.bait}</p>

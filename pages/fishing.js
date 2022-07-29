@@ -50,13 +50,3 @@ export const getServerSideProps = async (context) => {
     props: {fish: res.data, temp: weatherData}
   }
 }
-
-// export const getStaticProps = async () => {
-//   try {
-// 		const res = await fetch(`https://api.weather.gov/gridpoints/CLE/10,59/forecast/hourly`);
-// 		const data = await res.json();
-// 		console.log(data);
-// 	} catch (err) {
-// 		console.log(err);
-// 	}
-// }

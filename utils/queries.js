@@ -11,3 +11,10 @@ export const fishDetails = (fishId) => {
   }`
   return query
 }
+
+export const allRepos = () => {
+  const query = `*[_type == 'repo']{
+    _id, description, title, giturl, url, tags
+  }`
+  return query
+}

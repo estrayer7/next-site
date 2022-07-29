@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
 import self from '../public/images/pic.jpeg'
 import bg from '../public/images/Bowling-Green-Falcons-Logo.png'
 import compassion from '../public/images/compassion-logo.webp'

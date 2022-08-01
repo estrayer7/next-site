@@ -53,7 +53,7 @@ const Fishing = ({fish, forecast}) => {
 
 export default Fishing
 
-export const getStaticProps = async (context) => {
+export const getServerSideProps = async (context) => {
 	const weather = await fetch(`https://api.weather.gov/gridpoints/CLE/10,59/forecast/hourly`);
 	const weatherData = await weather.json();
 	

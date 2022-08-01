@@ -9,7 +9,11 @@ const Fishing = ({fish, forecast}) => {
   const router = useRouter()
 
   useEffect(() => {
-   () => {router.reload()}
+   function refresh() {
+    router.push('/fishing')
+   }
+
+   refresh()
   }, [])
   
 

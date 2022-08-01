@@ -11,7 +11,7 @@ const fishing = ({fish, forecast}) => {
     <div className='border-black border-solid border-2 rounded w-[80vw]'>
     <h1 className='text-2xl text-center m-2'>Five Hour Forecast</h1>
       <div className='flex justify-center'>
-        {forecast.properties.periods.slice(0,5).map((weather) => (
+        {forecast.properties.periods.slice(1,6).map((weather) => (
           <div key={weather.number} className='m-3 p-3 w-1/5'>
             <p>Temperature: {weather.temperature} F</p>
             <p>Cover: {weather.shortForecast}</p>

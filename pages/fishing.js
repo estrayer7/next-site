@@ -23,7 +23,7 @@ const Fishing = ({fish, forecast}) => {
     <div className='border-black border-solid border-2 rounded w-[80vw]'>
     <h1 className='text-2xl text-center m-2'>Five Hour Forecast</h1>
       <div className='flex justify-center'>
-        {forecast.properties.periods.slice(0,5).map((weather) => (
+        {forecast.properties?.periods.slice(0,5).map((weather) => (
           <div key={weather.number} className='m-3 p-3 w-1/5'>
             <p>Temperature: {weather.temperature} F</p>
             <p>Cover: {weather.shortForecast}</p>
@@ -53,7 +53,7 @@ const Fishing = ({fish, forecast}) => {
 
 export default Fishing
 
-export const getServerSideProps = async (context) => {
+export const getStaticProps = async (context) => {
 	const weather = await fetch(`https://api.weather.gov/gridpoints/CLE/10,59/forecast/hourly`);
 	const weatherData = await weather.json();
 	

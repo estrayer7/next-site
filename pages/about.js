@@ -4,7 +4,7 @@ import self from '../public/images/pic.jpeg'
 import bg from '../public/images/Bowling-Green-Falcons-Logo.png'
 import compassion from '../public/images/compassion-logo.webp'
 
-const about = () => {
+const About = () => {
   return (
     <div className='m-5'>
       <h1 className='text-xl'>About Elijah Strayer</h1>
@@ -32,4 +32,4 @@ const about = () => {
   )
 }
 
-export default about
+export default About
